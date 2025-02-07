@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    gap: 20px;
+}
+
+#user-nav{
+    margin-left:auto;
+}
+
+.drop-down-list {
+    display: none;
+}
+
+#pages-nav {
+    display: flex;
+    gap: 12px;
+}
+
+.arrow-up {
+    display: none;
+}
+
+.drop-down a {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.drop-down a:hover + .drop-down-list {
+    display: block;
+}
+
+
+.drop-down-list:hover {
+    display: block;
+}
+
+.drop-down {
+    position: relative;
+    
+}
+
+.drop-down-list {
+    position: absolute;
+    top:68%;
+    padding:5px;
+    background-color: white;
+    list-style-type:none;
+}
