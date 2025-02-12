@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+<body>
+    <h1>CSS Animations</h1>
+    <p></p>
+    <nav>
+        <a href="#">
+            <img src="./images/icon-planning.svg" alt="">
+            <span>planning</span>
+        </a>
+        <a href="#">
+            <img src="./images/icon-reminders.svg" alt="">
+            <span>Reminders</span>
+        </a>
+        <a href="#">
+            <img src="./images/icon-todo.svg" alt="">
+            <span>To Do</span>
+        </a>
+    </nav>
+    <div id="box"></div>
+    <style>
+            #box {
+                background-color: green;
+                width: 80px;
+                height: 80px;
+                /* transition: transform 0.6s linear; */
+                border-radius: 40px;
+                animation: loading 0.7s linear infinite;
+            }
+@keyframes loading {
+    0% {
+        transform: scale(0);
+        background-color: blue;
+    }
+    40% {
+        opacity: 1;
+        background-color: orange;
+    }
+    100% {
+        transform: (1);
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+          /* #box:hover {
+                transform: rotate(30deg);
+                 transform: scale(2); 
+          }
+            */
+              
+          
+        * {
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: antiquewhite;
+            width: 35px;
+            overflow: hidden;
+            transition: width 0.3s ease;
+     }
+     nav span {
+        display: none;
+     }
+        
+        nav img {
+            width: 25px;
+            padding: 5px;
+        }
+        nav a {
+            color: blue;
+            display: block;
+            padding: 5px;
+        }
+        nav:hover span {
+            display: inline-block;
+        }
+        nav:hover {
+            width: 200px;
+        }
+    </style>
+</body>
+</html>
